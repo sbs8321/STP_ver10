@@ -330,7 +330,6 @@ public class SearchService {
 	public ModelAndView stateparking() {
 		mav = new ModelAndView();
 		List<MeetyouallParkVo> parkList = new ArrayList<>();
-
 		parkList = searchDao.stateList();
 		mav.addObject("parkList", parkList);
 		mav.setViewName("search/confirmList");
